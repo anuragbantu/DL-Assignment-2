@@ -122,12 +122,11 @@ print(f"Test Accuracy: {test_acc:.2f}%")
 
 ## Visualization of Predictions
 
-Generates a 10×3 grid of sample predictions from the test set. Correct predictions are marked in green, and incorrect ones in red. Logged to W&B.
+Generates a 10×3 grid of sample predictions from the test set. Correct predictions are marked in green, and incorrect ones in red.
 
 ```python
 plt.subplots(10, 3)
 ...
-wandb.log({"Sample Predictions Grid": wandb.Image(fig)})
 ```
 
 ---
